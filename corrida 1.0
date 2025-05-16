@@ -2,21 +2,21 @@ function setup() {
   createCanvas(400, 400);
 }
 
-let xJogador1=0;
-let xJogador2=0;
+let xJogador1=0;// jogador 1 
+let xJogador2=0;//jogador 2 
 
 function draw(){ 
   ativaJogo ();
-  desenhaJogadores();
-  desenhalinhadechegada();  
-  verificavencedores();
+  desenhaJogadores();//desenha jogadores 
+  desenhalinhadechegada();  //desenha linha de chegada 
+  verificavencedores();//verifica jogadores 
  
 } 
   function ativaJogo(){
 if (focused == true){  
-   background('blue');
+   background('blue');//deixa o fundo azul quando e cliclado 
 }else { 
-  background('pink');
+  background('pink');//deixa o fundo rosa quando e cliclado 
 }
   }
     function desenhaJogadores(){
